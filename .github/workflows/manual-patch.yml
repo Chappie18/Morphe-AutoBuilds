@@ -141,7 +141,7 @@ jobs:
         run: pip install requests
 
       - name: Publish to GitLab Releases
-        if: ${{ inputs.replace_in_release == true }}
+        if: false
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
           GITLAB_PROJECT_ID: "87288318"
@@ -157,7 +157,7 @@ jobs:
             --merge
 
       - name: Verify GitLab Release Health
-        if: always() && ${{ inputs.replace_in_release == true }}
+        if: false
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
           GITLAB_PROJECT_ID: "87288318"
