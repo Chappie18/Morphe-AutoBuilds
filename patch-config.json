@@ -11,6 +11,10 @@
     {
       "app_name": "reddit",
       "source": "morphe"
+    },
+    {
+      "app_name": "x-new",
+      "source": "piko-newx"
     }
   ]
 }
