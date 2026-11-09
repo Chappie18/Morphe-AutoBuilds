@@ -12,7 +12,7 @@ on:
         required: false
         default: false
   schedule:
-    - cron: '0 6 */1 * *'  # Every 3 calendar days at 6 AM UTC (11:30 AM IST)
+    - cron: '30 10 * * *'  # Every day at 4:00 PM IST (10:30 AM UTC)
 
 jobs:
   download-tools:
